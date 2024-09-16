@@ -51,7 +51,7 @@ app.use('/api/message', messageRoutes);
 //notfound and errorhandlers are middlewares
 app.use(notFound);
 
-
+const path = require('path');
 const PORT = process.env.PORT || 4000
 // console.log(PORT);
 
