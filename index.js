@@ -4,7 +4,7 @@ dotenv.config();   //moved up
 const { chats } = require('./data/data');
 const connectDB = require('./config/db')    //commented
 const cors = require('cors')
-
+const path = require('path');
 //added
 // require('./config/db.js');
 const User = require('./models/userModel.js');
@@ -51,7 +51,7 @@ app.use('/api/message', messageRoutes);
 //notfound and errorhandlers are middlewares
 app.use(notFound);
 
-const path = require('path');
+
 const PORT = process.env.PORT || 4000
 // console.log(PORT);
 
